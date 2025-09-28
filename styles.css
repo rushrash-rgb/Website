@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d3c34; /* Темно-зеленый фон */
+    color: #ecf0f1; /* Светлый цвет текста */
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Заголовок и аватар */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ecf0f1;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Общая сетка для разделов с картинками */
+section.container.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+section.container.grid > div,
+section.container.grid > img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    section.container.grid {
+        grid-template-columns: 1fr;
+    }
+    section.container.grid > div, section.container.grid > img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Секции с фоном */
+section > div.bg-green-700 {
+    background-color: #2e5a49; /* Тёмный оттенок зелёного для секций */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+section > div.bg-green-800 {
+    background-color: #246140; /* Более насыщенный зеленый для контраста */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Заголовки секций */
+section h2, section h3 {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+section h3 {
+    font-size: 1.5rem;
+}
+
+/* Текстовый контент */
+p, ul {
+    font-size: 1.2rem;
+}
+
+ul.list-disc {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+}
+
+ul.list-none {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Контактные ссылки */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d3c34; /* Темно-зеленый фон для футера */
+    border-radius: 8px;
+}
